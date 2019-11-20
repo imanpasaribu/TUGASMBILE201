@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tugas01"
+    package="com.example.latihan201"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="18"
         android:targetSdkVersion="18" />
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -25,12 +25,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ContactDetail"
-            android:label="@string/title_activity_contact_detail"
+            android:name=".ContactDetails"
+            android:label="@string/title_activity_contact_details"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.Tugas01.MainActivity" />
+                android:value="com.example.latihan201.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ContactAdd"
+            android:label="@string/title_activity_contact_add"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.latihan201.MainActivity" />
         </activity>
     </application>
 
